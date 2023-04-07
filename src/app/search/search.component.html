@@ -1,0 +1,30 @@
+<div *ngIf="searchResult">
+	<div class="row g-2">
+		<div class="col-sm-12" *ngFor="let product of searchResult">
+		  <div class="card">
+			<div class="d-flex justify-content-center align-items-center p-2 mx-auto" style="width:200px;height:200px">
+				<img src="{{product.productImageUrl}}" class="p-2 card-img-top" alt="...">
+			</div>
+
+			<div class="card-body border-top mt-2">
+			  <p class="fs-5">{{product.productName}}</p>
+			  <p class="fs-5">Price : {{product.productPrice}}</p>
+              <p class="fs-5">Color : {{product.productColor}}</p>
+              <p class="fs-5">Category : {{product.productCategory}}</p>
+              <p class="fs-5">Details : {{product.productDescription}}</p>
+              
+              <p class="card-text">
+				 <!-- <button class="btn btn-link">View Details</button>
+				<button class="btn btn-link">Add To Cart</button>  -->
+			  </p>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div> 
+
+<div *ngIf="searchResult?.length===0">
+    <div class="alert alert-success mt-5" role="alert">
+        Sorry We Dont Found Any Appropriate Product
+    </div>
+</div>

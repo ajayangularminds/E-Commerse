@@ -1,0 +1,100 @@
+<!-- Register Area Here -->
+
+<div *ngIf="showLogin">
+  <p class="fs-1 fw-bold text-primary text-center mb-3">Seller Sign-Up</p>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="border border-warning rounded w-50 p-4">
+      <form
+        #sellerSignUp="ngForm"
+        (ngSubmit)="signUp(sellerSignUp.value)"
+        class="common-form"
+      >
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="name"
+            placeholder="Please Enter Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="email"
+            placeholder="Please Enter Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label"
+            >Password</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="password"
+            placeholder="Please Enter Password"
+          />
+        </div>
+        <div class="mb-3 signUp-btn">
+          <button class="btn btn-success w-50">Sign Up</button>
+        </div>
+
+        <div class="mb-3 signUp-btn">
+            <button type="button" (click)=" openLogin()" class="btn btn-link">Already Have An Account? Click To Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Login Area Here -->
+
+<div *ngIf="!showLogin">
+  <p class="fs-1 fw-bold text-primary text-center mb-3">Seller Login</p>
+  <p class="text-danger text-center fw-bold">{{authError}}</p>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="border border-warning rounded w-50 p-4">
+      <form
+        #sellerLogin="ngForm"
+        (ngSubmit)="login(sellerLogin.value)"
+        class="common-form"
+      >
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="email"
+            placeholder="Please Enter Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label"
+            >Password</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="password"
+            placeholder="Please Enter Password"
+          />
+        </div>
+        <div class="mb-3 signUp-btn">
+          <button class="btn btn-success w-50">Sign Up</button>
+        </div>
+        <div class="mb-3 signUp-btn">
+            <button type="button" (click)="openSignUp()" class="btn btn-link">Don't Have An Account? Click To Create Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

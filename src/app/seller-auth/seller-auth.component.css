@@ -1,0 +1,8 @@
+.signUp-btn{
+   display: flex;
+   justify-content: center;
+}
+.my-link{
+   color: blue;
+   cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<div>
+    <p class="text-center text-primary fw-bold fs-1">All Product List</p>
+    <p class="text-center text-danger">{{productMessage}}</p>
+    <table class="table table-bordered border-primary">
+        <tr>
+            <th>SN</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Category</th>
+            <th>Specificaions</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let product of productList;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productPrice}}</td>
+            <td>{{product.productColor}}</td>
+            <td>{{product.productCategory}}</td>
+            <td>{{product.productDescription}}</td>
+            <td><img style="width: 100px; height:100px;" src="{{product.productImageUrl}}" alt="Product Image Is Here"></td>
+            <td>
+                <button class="btn btn-danger bg-danger text-light" routerLink="/seller-update-product/{{product.id}}"> Update </button>
+                <button class="btn btn-danger bg-danger text-light" (click)="deleteProduct(product.id)" > Delete </button> </td>
+        </tr>
+    </table>
+
+</div>

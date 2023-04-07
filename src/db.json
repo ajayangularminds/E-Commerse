@@ -1,0 +1,96 @@
+{
+  "seller": [
+    {
+      "name": "Ajay Shinde",
+      "email": "ajay@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Kiran Shinde",
+      "email": "kiran@gmail.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "Aslam Shaikh",
+      "email": "aslam@gmail.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "Jamir Shaikh",
+      "email": "jamir@gmail.com",
+      "password": "abc@123",
+      "id": 4
+    },
+    {
+      "name": "Parshuram Gunthe",
+      "email": "parshuram@gmail.com",
+      "password": "abc@123",
+      "id": 5
+    },
+    {
+      "name": "Aniket Parkhi",
+      "email": "aniket@gmail.com",
+      "password": "abc@123",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "wew",
+      "password": "werwr",
+      "id": 7
+    },
+    {
+      "name": "Sandesh Shingare",
+      "email": "sandesh@gmail.com",
+      "password": "abc@123",
+      "id": 8
+    },
+    {
+      "name": "sidhu",
+      "email": "sidhu@gmail.com",
+      "password": "abc@123",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "productName": "Samsung M51",
+      "productPrice": "220002",
+      "productColor": "Black",
+      "productCategory": "Mobile",
+      "productDescription": "Mobile With Great Features",
+      "productImageUrl": "https://i.dummyjson.com/data/products/3/1.jpg",
+      "id": 1
+    },
+    {
+      "productName": "ear Phones",
+      "productPrice": "1500",
+      "productColor": "White",
+      "productCategory": "Electronics",
+      "productDescription": "asdsad",
+      "productImageUrl": "https://plus.unsplash.com/premium_photo-1678099940967-73fe30680949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 2
+    },
+    {
+      "productName": "iPhone 9",
+      "productPrice": "140000",
+      "productColor": "White",
+      "productCategory": "Electronics",
+      "productDescription": "asdsad",
+      "productImageUrl": "https://i.dummyjson.com/data/products/1/1.jpg",
+      "id": 3
+    },
+    {
+      "productName": "Microsoft Surface Laptop 4",
+      "productPrice": "75000",
+      "productColor": "Black",
+      "productCategory": "Laptop",
+      "productDescription": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "productImageUrl": "https://i.dummyjson.com/data/products/8/1.jpg",
+      "id": 4
+    }
+  ]
+}
