@@ -58,7 +58,7 @@
   "products": [
     {
       "productName": "Samsung M51",
-      "productPrice": "220002",
+      "productPrice": "25000",
       "productColor": "Black",
       "productCategory": "Mobile",
       "productDescription": "Mobile With Great Features",
@@ -91,6 +91,39 @@
       "productDescription": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
       "productImageUrl": "https://i.dummyjson.com/data/products/8/1.jpg",
       "id": 4
+    }
+  ],
+  "users": [
+    {
+      "username": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "username": "kiran",
+      "email": "kiran@gmail.com",
+      "password": "abc@123",
+      "id": 2
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "ajay@gmail.com",
+      "address": "Pune",
+      "contactNo": "9111439152",
+      "totalPrice": 6040,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "ajay@gmail.com",
+      "address": "latur",
+      "contactNo": "9111439155",
+      "totalPrice": 118040,
+      "userId": 1,
+      "id": 3
     }
   ]
 }

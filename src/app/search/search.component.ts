@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
@@ -8,13 +8,17 @@ import { Product } from '../data-type';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent implements OnInit, OnChanges {
 
 
   searchResult: undefined | Product[];
 
   constructor(private activatedRoute:ActivatedRoute, private productService:ProductService) {
     this.load();
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.load();
+    console.log('Changes Occurs')
   }
 
   ngOnInit(): void {

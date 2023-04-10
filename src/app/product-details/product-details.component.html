@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center mt-3">
+    <div *ngIf="productData">
+
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-center p-3">
+                <img src="{{productData.productImageUrl}}" class="img-fluid rounded-start prImg" alt="...">
+                </div>
+            </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Name : {{productData.productName}}</h5>
+                  <p class="card-text">Price : {{productData.productPrice}}</p>
+                  <p class="card-text">Category : {{productData.productCategory}}</p>
+                  <p class="card-text">Color :
+                    <span class="colorClass" [ngStyle]="{'background-color':'currentColor', color: 'currentColor'}">C</span>
+                  </p>
+                  <p class="card-text">Description : {{productData.productDescription}}</p>
+                 
+                    <button *ngIf="!removeCart" class="btn btn-success mb-3" (click)="addToCart()">Add To Cart</button>
+                    <button *ngIf="removeCart" class="btn btn-success mb-3" (click)="removeToCart(productData.id)">Remove From Cart</button>
+
+                    <button class="btn btn-success ms-3 mb-3">Buy Now</button>
+                 
+                    <div class="quantityBtn">
+                        <button class="btn btn-primary" (click)="handleQuantity('min')"> <p>-</p></button>
+                        <input type="number" value="{{productQuantity}}">
+                        <button class="btn btn-primary" (click)="handleQuantity('plus')"><p>+</p></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+</div>

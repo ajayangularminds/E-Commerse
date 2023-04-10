@@ -1,0 +1,107 @@
+<div *ngIf="!showLogin" class="d-flex justify-content-center mt-3">
+  <div class="border border-dark rounded p-4">
+    <p class="fs-1 fw-bold text-center text-success">User Sign-Up</p>
+
+    <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"
+          >Username :
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          ngModel
+          placeholder="Please Enter Username"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Email : </label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          ngModel
+          #email="ngModel"
+          required
+          placeholder="Please Enter Email"
+        />
+        <p><span *ngIf="email.invalid && email.touched">Please Enter Valid Value</span></p>
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Password :
+        </label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          ngModel
+          #password="ngModel"
+          required
+          placeholder="Please Enter Password"
+        />
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <button class="btn btn-success mb-3">Sign Up</button>
+        <p>
+          Already Have An Account ?
+          <a (click)="openLogin()" class="text-primary">Click Here</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- User Login Logic Here  -->
+
+<div *ngIf="showLogin" class="d-flex justify-content-center mt-3">
+  <div class="border border-dark rounded p-4">
+    <p class="fs-1 fw-bold text-center text-success">Login</p>
+
+    <form #userLogin="ngForm" (ngSubmit)="userLog(userLogin.value)">
+        <p class="text-center text-danger">{{authError}}</p>
+        <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Email* : </label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          ngModel
+          #email="ngModel"
+          required
+          email=""
+          placeholder="Please Enter Email"
+        />
+        <p class="text-danger"><span *ngIf="email.invalid && email.touched">Please Enter Valid Email</span></p>
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Password* :
+        </label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          ngModel
+          #password="ngModel"
+          required
+          minlength="2"
+          maxlength="20"
+          placeholder="Please Enter Password"
+        />
+        <p class="text-danger"><span *ngIf="password.invalid && password.touched">Please Enter Valid Password</span></p>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <button [disabled]="userLogin.invalid" class="btn btn-success mb-3">Login</button>
+        <p>
+          Don't Have An Account ?
+          <a (click)="openSignUp()" class="text-primary">Click Here</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

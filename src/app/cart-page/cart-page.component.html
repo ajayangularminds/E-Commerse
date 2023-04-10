@@ -1,0 +1,64 @@
+<p class="fs-1 fw-bold text-center text-primary">Cart Details</p>
+
+<div class="row">
+    <div class="col-sm-8">
+        
+        <div *ngFor="let product of cartData" class="card mb-3 w-100">
+            <div class="row g-0">
+              <div class="col-sm-2 d-flex justify-content-center">
+                <img src="{{product.productImageUrl}}" class="img-fluid rounded-start p-3" alt="Image Not Found" style="min-height:100px;">
+              </div>
+              <div class="col-sm-10 d-flex align-items-center">
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="d-flex flex-column" style="width:150px">
+                        <p>Name</p>
+                        <p>{{product.productName}}</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p>Price</p>
+                        <p>{{product.productPrice}}</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p>Quanitity</p>
+                        <p>{{product.quantity}}</p>
+                    </div>
+                    <div>
+                        <p> <button class="btn btn-danger" (click)="removeToCart(product.id)">Remove From Cart</button> </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <div class="col-sm-4 border boder-dark rounded" style="height:100%">
+        
+        <p class="fs-3 fw-bold text-success mt-2">Summary</p>
+
+
+        <div class="card mb-3" style="width: 100%;">
+            <div class="card-body">
+
+                <div class="row p-4">
+                    <div class="col">
+                        <p>Amount</p>
+                        <p>Tax</p>
+                        <p>Delivery</p>
+                        <p>Discount</p>
+                        <p class="fw-bold">Total</p>
+                        <button class="btn btn-primary" (click)="checkout()">Check Out</button>
+                    </div>
+                    <div class="col text-end">
+                        <p>{{priceSummary.price | number:'1.0-2'}}</p>
+                        <p>{{priceSummary.tax | number:'1.0-2'}}</p>
+                        <p>{{priceSummary.delivery | number:'1.0-2'}}</p>
+                        <p>{{priceSummary.discount | number:'1.0-2'}}</p>
+                        <p class="fw-bold">{{priceSummary.total | number:'1.0-2'}}</p>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        
+    </div>
+</div>
