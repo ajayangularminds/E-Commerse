@@ -22,11 +22,7 @@
               Color :
               <span
                 class="colorClass"
-                [ngStyle]="{
-                  'background-color': 'currentColor',
-                  color: 'currentColor'
-                }"
-                >C</span
+                [style.backgroundColor]="productData.productColor" [style.color]="productData.productColor">C</span
               >
             </p>
             <p class="card-text">

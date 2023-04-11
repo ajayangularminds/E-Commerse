@@ -53,7 +53,7 @@
     {
       "productName": "Samsung M51",
       "productPrice": "25000",
-      "productColor": "Black",
+      "productColor": "blue",
       "productCategory": "Mobile",
       "productDescription": "Mobile With Great Features",
       "productImageUrl": "https://i.dummyjson.com/data/products/3/1.jpg",
@@ -62,7 +62,7 @@
     {
       "productName": "ear Phones",
       "productPrice": "1500",
-      "productColor": "White",
+      "productColor": "#b33232",
       "productCategory": "Electronics",
       "productDescription": "asdsad",
       "productImageUrl": "https://plus.unsplash.com/premium_photo-1678099940967-73fe30680949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -71,7 +71,7 @@
     {
       "productName": "iPhone 9",
       "productPrice": "140000",
-      "productColor": "White",
+      "productColor": "#b33232",
       "productCategory": "Electronics",
       "productDescription": "asdsad",
       "productImageUrl": "https://i.dummyjson.com/data/products/1/1.jpg",
@@ -88,8 +88,8 @@
     },
     {
       "productName": "iPhone 9",
-      "productPrice": 549,
-      "productColor": "",
+      "productPrice": 70000,
+      "productColor": "#b33232",
       "productCategory": "smartphones",
       "productDescription": "An apple mobile which is nothing like apple",
       "productImageUrl": "https://i.dummyjson.com/data/products/1/1.jpg",
@@ -97,8 +97,8 @@
     },
     {
       "productName": "iPhone X",
-      "productPrice": 899,
-      "productColor": "",
+      "productPrice": 125000,
+      "productColor": "black",
       "productCategory": "smartphones",
       "productDescription": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "productImageUrl": "https://i.dummyjson.com/data/products/2/1.jpg",
@@ -106,8 +106,8 @@
     },
     {
       "productName": "Samsung Universe 9",
-      "productPrice": 1249,
-      "productColor": "",
+      "productPrice": 20000,
+      "productColor": "white",
       "productCategory": "smartphones",
       "productDescription": "Samsung's new variant which goes beyond Galaxy to the Universe",
       "productImageUrl": "https://i.dummyjson.com/data/products/3/1.jpg",
@@ -115,8 +115,8 @@
     },
     {
       "productName": "OPPOF19",
-      "productPrice": 280,
-      "productColor": "",
+      "productPrice": 27000,
+      "productColor": "grey",
       "productCategory": "smartphones",
       "productDescription": "OPPO F19 is officially announced on April 2021.",
       "productImageUrl": "https://i.dummyjson.com/data/products/4/1.jpg",
@@ -124,8 +124,8 @@
     },
     {
       "productName": "Huawei P30",
-      "productPrice": 499,
-      "productColor": "",
+      "productPrice": 30000,
+      "productColor": "blue",
       "productCategory": "smartphones",
       "productDescription": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
       "productImageUrl": "https://i.dummyjson.com/data/products/5/1.jpg",
@@ -133,17 +133,17 @@
     },
     {
       "productName": "MacBook Pro",
-      "productPrice": 1749,
-      "productColor": "",
+      "productPrice": 120000,
+      "productColor": "white",
       "productCategory": "laptops",
       "productDescription": "MacBook Pro 2021 with mini-LED display may launch between September, November",
       "productImageUrl": "https://i.dummyjson.com/data/products/6/1.png",
       "id": 10
     },
     {
-      "productName": "Freckle Treatment Cream- 15gm",
-      "productPrice": 70,
-      "productColor": "",
+      "productName": "Freckle Treatment Cream- 50gm",
+      "productPrice": 499,
+      "productColor": "white",
       "productCategory": "skincare",
       "productDescription": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
       "productImageUrl": "https://i.dummyjson.com/data/products/20/1.jpg",
@@ -151,8 +151,8 @@
     },
     {
       "productName": "- Daal Masoor 500 grams",
-      "productPrice": 20,
-      "productColor": "",
+      "productPrice": 200,
+      "productColor": "green",
       "productCategory": "groceries",
       "productDescription": "Fine quality Branded Product Keep in a cool and dry place",
       "productImageUrl": "https://i.dummyjson.com/data/products/21/1.png",
@@ -160,8 +160,8 @@
     },
     {
       "productName": "Elbow Macaroni - 400 gm",
-      "productPrice": 14,
-      "productColor": "",
+      "productPrice": 399,
+      "productColor": "yellow",
       "productCategory": "groceries",
       "productDescription": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
       "productImageUrl": "https://i.dummyjson.com/data/products/22/1.jpg",
@@ -169,8 +169,8 @@
     },
     {
       "productName": "Orange Essence Food Flavou",
-      "productPrice": 14,
-      "productColor": "",
+      "productPrice": 749,
+      "productColor": "red",
       "productCategory": "groceries",
       "productDescription": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
       "productImageUrl": "https://i.dummyjson.com/data/products/23/1.jpg",
@@ -178,8 +178,8 @@
     },
     {
       "productName": "cereals muesli fruit nuts",
-      "productPrice": 46,
-      "productColor": "",
+      "productPrice": 999,
+      "productColor": "white",
       "productCategory": "groceries",
       "productDescription": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
       "productImageUrl": "https://i.dummyjson.com/data/products/24/1.jpg",
@@ -187,8 +187,8 @@
     },
     {
       "productName": "iPhone 9",
-      "productPrice": 549,
-      "productColor": "",
+      "productPrice": 122000,
+      "productColor": "blue",
       "productCategory": "smartphones",
       "productDescription": "An apple mobile which is nothing like apple",
       "productImageUrl": "https://i.dummyjson.com/data/products/1/1.jpg",
@@ -196,8 +196,8 @@
     },
     {
       "productName": "iPhone X",
-      "productPrice": 899,
-      "productColor": "",
+      "productPrice": 79000,
+      "productColor": "white",
       "productCategory": "smartphones",
       "productDescription": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "productImageUrl": "https://i.dummyjson.com/data/products/2/1.jpg",
@@ -205,8 +205,8 @@
     },
     {
       "productName": "Samsung Universe 9",
-      "productPrice": 1249,
-      "productColor": "",
+      "productPrice": 26000,
+      "productColor": "black",
       "productCategory": "smartphones",
       "productDescription": "Samsung's new variant which goes beyond Galaxy to the Universe",
       "productImageUrl": "https://i.dummyjson.com/data/products/3/1.jpg",
@@ -214,8 +214,8 @@
     },
     {
       "productName": "OPPOF19",
-      "productPrice": 280,
-      "productColor": "",
+      "productPrice": 28000,
+      "productColor": "black",
       "productCategory": "smartphones",
       "productDescription": "OPPO F19 is officially announced on April 2021.",
       "productImageUrl": "https://i.dummyjson.com/data/products/4/1.jpg",
@@ -223,8 +223,8 @@
     },
     {
       "productName": "Huawei P30",
-      "productPrice": 499,
-      "productColor": "",
+      "productPrice": 38000,
+      "productColor": "blue",
       "productCategory": "smartphones",
       "productDescription": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
       "productImageUrl": "https://i.dummyjson.com/data/products/5/1.jpg",
@@ -232,8 +232,8 @@
     },
     {
       "productName": "MacBook Pro",
-      "productPrice": 1749,
-      "productColor": "",
+      "productPrice": 120000,
+      "productColor": "black",
       "productCategory": "laptops",
       "productDescription": "MacBook Pro 2021 with mini-LED display may launch between September, November",
       "productImageUrl": "https://i.dummyjson.com/data/products/6/1.png",
@@ -241,8 +241,8 @@
     },
     {
       "productName": "Samsung Galaxy Book",
-      "productPrice": 1499,
-      "productColor": "",
+      "productPrice": 38000,
+      "productColor": "white",
       "productCategory": "laptops",
       "productDescription": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
       "productImageUrl": "https://i.dummyjson.com/data/products/7/1.jpg",
@@ -250,8 +250,8 @@
     },
     {
       "productName": "Microsoft Surface Laptop 4",
-      "productPrice": 1499,
-      "productColor": "",
+      "productPrice": 59000,
+      "productColor": "black",
       "productCategory": "laptops",
       "productDescription": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
       "productImageUrl": "https://i.dummyjson.com/data/products/8/1.jpg",
@@ -259,8 +259,8 @@
     },
     {
       "productName": "perfume Oil",
-      "productPrice": 13,
-      "productColor": "",
+      "productPrice": 499,
+      "productColor": "black",
       "productCategory": "fragrances",
       "productDescription": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
       "productImageUrl": "https://i.dummyjson.com/data/products/11/1.jpg",
@@ -268,8 +268,8 @@
     },
     {
       "productName": "Brown Perfume",
-      "productPrice": 40,
-      "productColor": "",
+      "productPrice": 400,
+      "productColor": "black",
       "productCategory": "fragrances",
       "productDescription": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
       "productImageUrl": "https://i.dummyjson.com/data/products/12/1.jpg",
@@ -277,8 +277,8 @@
     },
     {
       "productName": "Fog Scent Xpressio Perfume",
-      "productPrice": 13,
-      "productColor": "",
+      "productPrice": 249,
+      "productColor": "white",
       "productCategory": "fragrances",
       "productDescription": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
       "productImageUrl": "https://i.dummyjson.com/data/products/13/1.jpg",
@@ -286,8 +286,8 @@
     },
     {
       "productName": "Non-Alcoholic Concentrated Perfume Oil",
-      "productPrice": 120,
-      "productColor": "",
+      "productPrice": 349,
+      "productColor": "black",
       "productCategory": "fragrances",
       "productDescription": "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
       "productImageUrl": "https://i.dummyjson.com/data/products/14/1.jpg",
@@ -295,8 +295,8 @@
     },
     {
       "productName": "Eau De Perfume Spray",
-      "productPrice": 30,
-      "productColor": "",
+      "productPrice": 300,
+      "productColor": "blue",
       "productCategory": "fragrances",
       "productDescription": "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
       "productImageUrl": "https://i.dummyjson.com/data/products/15/1.jpg",
@@ -304,8 +304,8 @@
     },
     {
       "productName": "Hyaluronic Acid Serum",
-      "productPrice": 19,
-      "productColor": "",
+      "productPrice": 749,
+      "productColor": "blue",
       "productCategory": "skincare",
       "productDescription": "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
       "productImageUrl": "https://i.dummyjson.com/data/products/16/1.png",
@@ -313,8 +313,8 @@
     },
     {
       "productName": "Tree Oil 30ml",
-      "productPrice": 12,
-      "productColor": "",
+      "productPrice": 129,
+      "productColor": "white",
       "productCategory": "skincare",
       "productDescription": "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,",
       "productImageUrl": "https://i.dummyjson.com/data/products/17/1.jpg",
@@ -322,8 +322,8 @@
     },
     {
       "productName": "Oil Free Moisturizer 100ml",
-      "productPrice": 40,
-      "productColor": "",
+      "productPrice": 400,
+      "productColor": "white",
       "productCategory": "skincare",
       "productDescription": "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
       "productImageUrl": "https://i.dummyjson.com/data/products/18/1.jpg",
@@ -331,17 +331,17 @@
     },
     {
       "productName": "Skin Beauty Serum.",
-      "productPrice": 46,
-      "productColor": "",
+      "productPrice": 460,
+      "productColor": "white",
       "productCategory": "skincare",
       "productDescription": "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
       "productImageUrl": "https://i.dummyjson.com/data/products/19/1.jpg",
       "id": 32
     },
     {
-      "productName": "Freckle Treatment Cream- 15gm",
-      "productPrice": 70,
-      "productColor": "",
+      "productName": "Freckle Treatment Cream- 50gm",
+      "productPrice": 490,
+      "productColor": "white",
       "productCategory": "skincare",
       "productDescription": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
       "productImageUrl": "https://i.dummyjson.com/data/products/20/1.jpg",
@@ -349,8 +349,8 @@
     },
     {
       "productName": "Key Holder",
-      "productPrice": 30,
-      "productColor": "",
+      "productPrice": 300,
+      "productColor": "black",
       "productCategory": "home-decoration",
       "productDescription": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
       "productImageUrl": "https://i.dummyjson.com/data/products/30/1.jpg",
@@ -372,5 +372,22 @@
     }
   ],
   "cart": [],
-  "orders": []
+  "orders": [
+    {
+      "email": "ajay@gmail.com",
+      "address": "Pune",
+      "contactNo": "9111439152",
+      "totalPrice": 20264,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "ajay@gmail.com",
+      "address": "Pune",
+      "contactNo": "9111439152",
+      "totalPrice": 20040,
+      "userId": 1,
+      "id": 2
+    }
+  ]
 }
