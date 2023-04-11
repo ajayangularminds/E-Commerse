@@ -34,11 +34,20 @@ export class ProductService {
   }
 
   populaProducts(){
-    return this.http.get<Product[]>('http://localhost:3000/products?_limit=3');
+    return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
   }
 
   trendyProducts(){
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
+  }
+
+
+  smartphoneProducts(){
+    return this.http.get<Product[]>('http://localhost:3000/products?_limit=4&&productCategory=smartphones');
+  }
+
+  laptopProducts(){
+    return this.http.get<Product[]>('http://localhost:3000/products?_limit=4&&productCategory=laptops');
   }
 
   searchProducts(query:string){

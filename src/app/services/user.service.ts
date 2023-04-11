@@ -44,4 +44,8 @@ export class UserService {
       this.router.navigate(['/']);
     }
   }
+
+  buyNow(){
+    alert('Buy Now Works');
+  }
 }

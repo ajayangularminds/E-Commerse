@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
+import { SearchComponent } from '../search/search.component';
 
 
 @Component({
@@ -93,5 +94,4 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/user-auth']);
     this.productService.cartData.emit([]);
   }
-
 }

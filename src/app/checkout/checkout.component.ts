@@ -52,13 +52,13 @@ export class CheckoutComponent implements OnInit {
       this.productService.orderNow(orderData).subscribe((result)=>{
         
         if(result){
-          this.orderMsg = "Your Order Has Been Placed"
+          this.orderMsg = "Your Order Has Been Placed..."
           console.log(result);
 
           setTimeout(()=>{
             this.router.navigate(['/my-orders']);
             this.orderMsg = undefined;
-          },4000)
+          },1000)
 
           
         }

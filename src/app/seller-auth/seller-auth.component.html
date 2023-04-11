@@ -1,7 +1,7 @@
 <!-- Register Area Here -->
 
 <div *ngIf="showLogin">
-  <p class="fs-1 fw-bold text-primary text-center mb-3">Seller Sign-Up</p>
+  <p class="fs-1 fw-bold text-primary text-center mb-3">Sign-Up</p>
 
   <div class="container d-flex justify-content-center align-items-center">
     <div class="border border-warning rounded w-50 p-4">
@@ -11,39 +11,49 @@
         class="common-form"
       >
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Name</label>
+          <label for="formGroupExampleInput" class="form-label">Name*</label>
           <input
             type="text"
             class="form-control"
             ngModel
             name="name"
+            #name="ngModel"
+            required
             placeholder="Please Enter Name"
           />
+          <p class="text-danger" *ngIf="name.invalid && name.touched">Please Enter Name</p>
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <label for="formGroupExampleInput2" class="form-label">Email*</label>
           <input
             type="text"
             class="form-control"
             ngModel
             name="email"
+            #email="ngModel"
+            required
+            email
             placeholder="Please Enter Email"
           />
+          <p class="text-danger" *ngIf="email.invalid && email.touched">Please Enter Valid Email</p>
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label"
-            >Password</label
+            >Password*</label
           >
           <input
             type="text"
             class="form-control"
             ngModel
             name="password"
+            #password="ngModel"
+            required
             placeholder="Please Enter Password"
           />
+          <p class="text-danger" *ngIf="password.invalid && password.touched">Password Is Required</p>
         </div>
         <div class="mb-3 signUp-btn">
-          <button class="btn btn-success w-50">Sign Up</button>
+          <button [disabled]="email.invalid || name.invalid || password.invalid" class="btn btn-success w-50">Sign Up</button>
         </div>
 
         <div class="mb-3 signUp-btn">
@@ -57,7 +67,7 @@
 <!-- Login Area Here -->
 
 <div *ngIf="!showLogin">
-  <p class="fs-1 fw-bold text-primary text-center mb-3">Seller Login</p>
+  <p class="fs-1 fw-bold text-primary text-center mb-3">Login</p>
   <p class="text-danger text-center fw-bold">{{authError}}</p>
   <div class="container d-flex justify-content-center align-items-center">
     <div class="border border-warning rounded w-50 p-4">
@@ -67,29 +77,37 @@
         class="common-form"
       >
         <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <label for="formGroupExampleInput2" class="form-label">Email*</label>
           <input
             type="text"
             class="form-control"
             ngModel
             name="email"
+            #email="ngModel"
+            required
+            email
             placeholder="Please Enter Email"
           />
+          <p class="text-danger" *ngIf="email.invalid && email.touched">Please Enter Valid Email</p>
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label"
-            >Password</label
+            >Password*</label
           >
           <input
             type="text"
             class="form-control"
             ngModel
             name="password"
+            #password="ngModel"
+            required
             placeholder="Please Enter Password"
           />
+          <p class="text-danger" *ngIf="password.invalid && password.touched">Please Enter Valid Password</p>
+
         </div>
         <div class="mb-3 signUp-btn">
-          <button class="btn btn-success w-50">Sign Up</button>
+          <button [disabled]="email.invalid || password.invalid" class="btn btn-success w-50">Sign Up</button>
         </div>
         <div class="mb-3 signUp-btn">
             <button type="button" (click)="openSignUp()" class="btn btn-link">Don't Have An Account? Click To Create Account</button>

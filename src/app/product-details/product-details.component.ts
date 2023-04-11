@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product, cart } from '../data-type';
 
@@ -20,7 +20,8 @@ export class ProductDetailsComponent implements OnInit {
 
   constructor(
     private activateRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private router:Router
   ) {}
 
   ngOnInit(): void {
@@ -111,5 +112,32 @@ export class ProductDetailsComponent implements OnInit {
         })
     }
     this.removeCart = false;
+  }
+
+  buyNow(){
+    if (this.productData) {
+      this.productData.quantity = this.productQuantity;
+      if (!localStorage.getItem('user')) {
+        this.productService.localAddToCart(this.productData);
+        this.removeCart = true;
+      } else {
+        let user = localStorage.getItem('user');
+        let userId = user && JSON.parse(user).id;
+
+        let cartData: cart = {
+          ...this.productData,
+          userId,
+          productId: this.productData.id,
+        };
+        delete cartData.id;
+        this.productService.addToCart(cartData).subscribe((result) => {
+          if (result) {
+            this.productService.getCartList(userId);
+            this.removeCart = true;
+            this.router.navigate(['cart-page'])
+          }
+        });
+      }
+    }
   }
 }

@@ -42,8 +42,8 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     NgbModule,
     FormsModule,
     HttpClientModule,
-    FontAwesomeModule
-    
+    FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

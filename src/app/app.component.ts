@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from './services/seller.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,8 @@ import { SellerService } from './services/seller.service';
 export class AppComponent {
   title = 'eCommerse';
 
+  constructor(private http:HttpClient){
+    
+  }
 
 }

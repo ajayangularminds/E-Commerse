@@ -1,34 +1,132 @@
 <ngb-carousel *ngIf="popularProduct">
-	<ng-template *ngFor="let product of popularProduct" ngbSlide>
-		<div class="picsum-img-wrapper d-flex justify-content-center">
-			<a routerLink="/details/{{ product.id }}">	<img class="productImg" src="{{product.productImageUrl}}" alt="Random first slide" /> </a>
-		</div>
-		<div class="carousel-caption">
-			<h3>{{product.productName}}</h3>
-			<p>{{product.productDescription}}</p>
-		</div>
-	</ng-template>
+  <ng-template *ngFor="let product of popularProduct" ngbSlide>
+    <div class="picsum-img-wrapper d-flex justify-content-center">
+      <a routerLink="/details/{{ product.id }}">
+        <img
+          class="productImg"
+          src="{{ product.productImageUrl }}"
+          alt="Random first slide"
+        />
+      </a>
+    </div>
+    <div class="carousel-caption">
+      <h3>{{ product.productName }}</h3>
+      <p>{{ product.productDescription }}</p>
+    </div>
+  </ng-template>
 </ngb-carousel>
+<p class="fs-3 fw-bold text-primary mt-3">Popular Products</p>
 <div class="mb-5"></div>
 <div>
-	<div class="row g-2">
-		<div class="col-sm-3" *ngFor="let product of trendyProducts">
-		  <div class="card">
-			<div class="d-flex justify-content-center align-items-center p-2 mx-auto" style="width:200px;height:200px">
-				<a routerLink="/details/{{ product.id }}">	<img src="{{product.productImageUrl}}" class="p-2 card-img-top" alt="..."> </a>
-			</div>
+  <div class="row g-2">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12"
+      *ngFor="let product of trendyProducts"
+    >
+      <div class="card">
+        <div
+          class="d-flex justify-content-center align-items-center p-2 mx-auto"
+          style="width: 200px; height: 200px"
+        >
+          <a routerLink="/details/{{ product.id }}">
+            <img
+              src="{{ product.productImageUrl }}"
+              class="p-2 card-img-top"
+              alt="..."
+              style="height: 135px"
+            />
+          </a>
+        </div>
 
-			<div class="card-body border-top mt-2 text-center">
-			  <p class="fs-5">{{product.productName}}</p>
-			  <p class="card-text">Price : {{product.productPrice}}</p>
-			  <p class="card-text">
-				<a routerLink="/details/{{ product.id }}"> <button class="btn btn-link">View Details</button> </a>
-				<button class="btn btn-link">Add To Cart</button>
-			  </p>
-			</div>
-		  </div>
-		</div>
-	</div>
+        <div class="card-body border-top mt-2 text-center">
+          <p class="fs-5">{{ product.productName }}</p>
+          <p class="card-text">Price : {{ product.productPrice }}</p>
+          <p class="card-text">
+            <a routerLink="/details/{{ product.id }}">
+              <button class="btn btn-link">View Details</button>
+            </a>
+            <button class="btn btn-link">Add To Cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="mt-5 mb-5"></div>
+<p class="fs-3 text-primary fw-bold">SmartPhones</p>
+<div>
+  <div class="row g-2">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12"
+      *ngFor="let product of smartPhoneProducts"
+    >
+      <div class="card">
+        <div
+          class="d-flex justify-content-center align-items-center p-2 mx-auto"
+          style="width: 200px; height: 200px"
+        >
+          <a routerLink="/details/{{ product.id }}">
+            <img
+              src="{{ product.productImageUrl }}"
+              class="p-2 card-img-top"
+              alt="..."
+              style="height: 135px"
+            />
+          </a>
+        </div>
+
+        <div class="card-body border-top mt-2 text-center">
+          <p class="fs-5">{{ product.productName }}</p>
+          <p class="card-text">Price : {{ product.productPrice }}</p>
+          <p class="card-text">
+            <a routerLink="/details/{{ product.id }}">
+              <button class="btn btn-link">View Details</button>
+            </a>
+            <button class="btn btn-link">Add To Cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="fs-3 fw-bold text-primary mt-3">Laptops</p>
+
+<div>
+  <div class="row g-2">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12"
+      *ngFor="let product of laptopProducts"
+    >
+      <div class="card">
+        <div
+          class="d-flex justify-content-center align-items-center p-2 mx-auto"
+          style="width: 200px; height: 200px"
+        >
+          <a routerLink="/details/{{ product.id }}">
+            <img
+              src="{{ product.productImageUrl }}"
+              class="p-2 card-img-top"
+              alt="Laptop Image Here"
+              style="height: 135px"
+            />
+          </a>
+        </div>
+
+        <div class="card-body border-top mt-2 text-center">
+          <p class="fs-5">{{ product.productName }}</p>
+          <p class="card-text">Price : {{ product.productPrice }}</p>
+          <p class="card-text">
+            <a routerLink="/details/{{ product.id }}">
+              <button class="btn btn-link">View Details</button>
+            </a>
+            <button class="btn btn-link">Add To Cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb-5"></div>

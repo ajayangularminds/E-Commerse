@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -10,7 +11,8 @@ import { Product } from '../data-type';
 export class SellerAddProductComponent implements OnInit {
 
   addProductMessage:string | undefined = undefined;
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService,private http:HttpClient) { 
+  }
 
   ngOnInit(): void {
   }

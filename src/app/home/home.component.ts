@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
 
@@ -13,6 +13,12 @@ export class HomeComponent implements OnInit {
 
   popularProduct : undefined | Product[];
   trendyProducts: undefined | Product[];
+  smartPhoneProducts: undefined | Product[];
+  laptopProducts : undefined | Product[];
+
+
+  arr = [1,2,3];
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -24,6 +30,19 @@ export class HomeComponent implements OnInit {
     this.productService.trendyProducts().subscribe((data)=>{
       this.trendyProducts=data;
     })
+    this.getSmartPhoneProducts();
+    this.getLaptops();
   }
 
+  getSmartPhoneProducts(){
+    this.productService.smartphoneProducts().subscribe((data)=>{
+      this.smartPhoneProducts=data;
+    })
+  }
+
+  getLaptops(){
+    this.productService.laptopProducts().subscribe((data)=>{
+        this.laptopProducts = data;
+    })
+  }
 }
